@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDos</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Header text below------------------------------------------------------------------------------------> 
+    <header>
+        <h1 class="main-header">To Do or Not To Do.</h1>
+    </header> 
+    
+<!--Popup for deleting task permanently----------------------------------------------------------------------> 
+
+<div id="popup-container">
+<!--
+<div class="popup">
+    <p class= "hiFive">If you click to continue, your task will be permanently deleted. Are you sure you want to continue?</p>
+    <button class="cancel btn">Cancel</button>
+    <button class="continue btn" >Continue</button>
+   </div>
+---> 
+</div>
+
+<div class="mytabs">
+    <input type="radio" id="tabfree" name="mytabs" checked="checked">
+    <label for="tabfree">To Dos</label>
+<!--Inner To DO Content------------------------------------------------------------------------------------>     
+    <div class="tab">
+      <h2>To Do</h2>
+      <form id="new-task-form">
+        <input 
+            type="text" 
+            name="new-task-input" 
+            id="new-task-input" 
+            placeholder="What do you have planned?" />
+            
+        <input 
+            type="submit"
+            id="new-task-submit" 
+            value="Add task" />
+    </form>
+
+        <h2>Tasks</h2>
+        
+        <div id="tasks">
+
+           <!-- <div class="task">
+                <div class="content">
+                    <input 
+                        type="text" 
+                        class="text" 
+                        value="A new task"
+                        readonly>
+                </div>
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </div>
+
+        </div>
+
+--->
+        </div>
+        
+    </div>
+
+    
+
+  <!--End of ToDo Below Deleted-------------------------------------------------------------------------->
+    
+    <input type="radio" id="tabgold" name="mytabs">
+    <label for="tabgold"><span class="material-symbols-outlined">
+        delete
+        </span></label>
+    <div class="tab">
+        <h2>Deleted Items</h2>
+    
+    <div id="trash">
+    <!--
+        <div class="task del-res">
+                <div class="content">
+                    <input 
+                        type="text" 
+                        class="text" 
+                        value="A new task"
+                        readonly>
+                </div>
+                
+            
+            <div class="actions">
+                <button class="restore">Restore</button>
+           </div>
+
+            
+       </div> --->
+
+   </div>
+
+   
+<!-- Bunions below------------------------------------------------------------------------------------>
+
+ <footer class="foot"></footer>
+
+ <script src="script.js"></script>
+</body>
+</html>
